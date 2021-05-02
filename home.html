@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <title>Marcel Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body id="home">
+    <script src="app.js"></script>
+
+    <div class="container5">
+      <div class="logo">
+          <a href="#"><img src="images/pic4.jpg" alt="logo"></a>
+      </div>
+    <div class="navbar5">
+    <div class="icon-bar" onclick="Show()">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <ul id="nav-lists5">
+      <li class="close"><span onclick="Hide()">×</span></li>
+      <li><a class ="active"href="home.html">Home</a></li>
+      <li><a href="#options">Menu</a></li>
+      <li><a href="pages\About.html">About</a></li>
+      <li><a href="pages\contact.html">Contact</a></li>
+      <li><a href="pages\Login.html">Login</a></li>
+      <li><a href="pages\signup.html">Signup</a></li>
+      <li><a href="#summary">We are now open</a></li>
+    </ul>
+
+    </div>
+    </div>
+
+    <header id="header"><p>Download our mobile app. Google play Store
+    <img src="images/pic7.png" alt="logo"> Avaliable on App Store
+    <img src="images/pic6.png" alt="logo"></p></header>
+
+  <!-- Home page content: carousel pictures, shop name, and build a pie button -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-content" id="build">
+        <h2 style="font-size:30px"><strong></stong></h2>
+      </div>
+      <div>
+        <a class="btn btn-success btn-small" href="#options" id="GO" role="button"><em><strong>Order Online!</em></strong></a>
+      </div>
+        <div class="carousel-item active" height="843px" width="100%">
+          <img class="d-block img-fluid" height="843px" width="100%" src="./PizzaPic4.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item" height="843px" width="100%">
+          <img class="d-block img-fluid" height="100%x" width="100%" src="./PizzaPic1.jfif" alt="Second slide">
+        </div>
+        <div class="carousel-item" height="843px" width="100%">
+          <img class="d-block img-fluid" height="100%x" width="100%" src="./PizzaPic2.jpg" alt="Second slide">
+        </div>
+    </div>
+  </div>
+  <div class="ophrs"><strong>Operation Hours</em></strong>
+  <p><span class="day">Monday:</span> 5am to 3pm</p>
+  <p><span class="day">Tuesday:</span> 5am to 3pm</p>
+  <p><span class="day">Wednesday:</span> 5am to 3pm</p>
+  <p><span class="day">Thursday:</span> 5am to 3pm</p>
+  <p><span class="day">Friday:</span> 5am to 3pm</p>
+  <p><span class="day">Saturday:</span> 6am to 4pm</p>
+  <p><span class="day">Sunday:</span> 6am to 4pm</p>
+  </div>
+  <!-- /Home page content end-->
+
+  <!-- radio button pizza options -->
+  <div class="jumbotron jumbotron-fluid text-center bg-light mb-0" id="options">
+    <div class="container-fluid no-padding">
+        <span class="border-top"></span>
+          <h1 class="buildapizza" style="font-size:60px"><strong>Build A Pizza</strong></h1>
+
+      <div class="jumbotron-item">
+        <div class="frames">
+          <div class="frame1">
+            <h1 class="btnheading" style="text-align:center"><strong>Size:</strong></h1>
+              &nbsp <input class="size" type="radio" style="align:left" name="size" value="Personal Pizza"> Personal Pizza</input></br>
+              &nbsp <input class="size" type="radio" style="align:left" name="size" value="Medium Pizza"> Medium Pizza</input></br>
+              &nbsp <input class="size" type="radio" style="align:left" name="size" value="Large Pizza" checked> Large Pizza</input></br>
+              &nbsp <input class="size" type="radio" style="align:left" name="size" value="Extra Large Pizza"> Extra Large Pizza</input></br>
+          </div>
+          <div class="frame2">
+            <h1 class="btnheading" style="text-align:center"><strong>Meats:</strong></h1>
+              &nbsp <input class="meat" type="checkbox" style="align:left" name="meat" value="Pepperoni"> Pepperoni</input></br>
+              &nbsp <input class="meat" type="checkbox" style="align:left" name="meat" value="Sausage"> Sausage</input></br>
+              &nbsp <input class="meat" type="checkbox" style="align:left" name="meat" value="Canadian Bacon"> Canadian Bacon</input></br>
+              &nbsp <input class="meat" type="checkbox" style="align:left" name="meat" value="Ground Beef"> Ground Beef</input></br>
+              &nbsp <input class="meat" type="checkbox" style="align:left" name="meat" value="Anchovy"> Anchovy</input></br>
+              &nbsp <input class="meat" type="checkbox" style="align:left" name="meat" value="Chicken"> Chicken</input></br>
+          </div>
+          <div class="frame3">
+            <h1 class="btnheading" style="text-align:center"><strong>Veggies:</strong></h1>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Tomatoes"> Tomatoes</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Onions"> Onions</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Olives"> Olives</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Green Peppers"> Green Peppers</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Mushrooms"> Mushrooms</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Pineapple"> Pineapple</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Spinach"> Spinach</input></br>
+              &nbsp <input class="veg" type="checkbox" style="align:left" name="veg" value="Jalapeno"> Jalapeno</input></br>
+          </div>
+          <div class="frame4">
+            <h1 class="btnheading" style="text-align:center"><strong>Cheese:</strong></h1>
+              &nbsp <input class="chz" type="radio" style="align:left" name="chz" value="Regular Cheese"> Regular Cheese</input></br>
+              &nbsp <input class="chz" type="radio" style="align:left" name="chz" value="No Cheese"> No Cheese</input></br>
+              &nbsp <input class="chz" type="radio" style="align:left" name="chz" value="Extra Cheese"> Extra Cheese</input></br>
+          </div>
+          <div class="frame5">
+            <h1 class="btnheading" style="text-align:center"><strong>Sauce:</strong></h1>
+              &nbsp <input class="sauce" type="radio" style="align:left" name="sauce" value="Marinara"> Marinara</input></br>
+              &nbsp <input class="sauce" type="radio" style="align:left" name="sauce" value="White Sauce"> White Sauce</input></br>
+              &nbsp <input class="sauce" type="radio" style="align:left" name="sauce" value="Barbecue Sauce"> Barbecue Sauce</input></br>
+              &nbsp <input class="sauce" type="radio" style="align:left" name="sauce" value="No Sauce"> No Sauce</input></br>
+          </div>
+          <div class="frame6">
+            <h1 class="btnheading" style="text-align:center"><strong>Crust:</strong></h1>
+              &nbsp <input class="crust" type="radio" style="align:left" name="crust" value="Plain Crust"> Plain Crust</input></br>
+              &nbsp <input class="crust" type="radio" style="align:left" name="crust" value="Garlic Butter Crust"> Garlic Butter Crust</input></br>
+              &nbsp <input class="crust" type="radio" style="align:left" name="crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust</input></br>
+              &nbsp <input class="crust" type="radio" style="align:left" name="crust" value="Spicy Crust"> Spicy Crust</input></br>
+              &nbsp <input class="crust" type="radio" style="align:left" name="crust" value="House Special Crust"> House Special Crust</input></br>
+          </div>
+        </div>
+        <div class="controls">
+          <div style="text-align:right">
+            <a href="#summary"><button id="order" type="button" onclick="getReceipt()" value="Place Order"><strong>Place Order</strong></button></a>
+            </br>
+            </br>
+            <a class="btn btn-success btn-small" id="backtotop1" href="#" type="button" role="button" class="button"><strong>Home</strong></a>
+            </br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Page End -->
+
+  <div>
+    <div class="container-fluid" id="summary">
+      <span class="border-top"></span>
+        <h1 class="Summary" style="font-size:40px"><strong>Order Summary:</strong></h1>
+      <div id="checkout">
+        <div id="cart">
+          <div class="flex-container" height="750" width="50%">
+            <div id="showText1"></div>
+          </div>
+          <div class="flex-container" height="750" width="50%">
+            <div id="showText2"></div>
+          </div>
+            <div id="totalPrice1"></div>
+            <div id="TotalPrice2"></div>
+        </div>
+        </br>
+        <div class="rebuild">
+          <a href="#options"><button id="cancel" type="button" onclick="clearAll()" value="Cancel Order"><strong>Cancel Order</strong></button></a>
+          <a class="btn btn-success btn-small" id="backtotop2" href="#" type="button" role="button" class="button"><strong>Return</strong></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>All rights reserved. Designed and Developed @Njighes' Inc</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
+</html>

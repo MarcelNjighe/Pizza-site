@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+  <script src="app.js"></script>
+
+  <div class="container">
+    <div class="logo">
+        <a href="#"><img src="images/pic4.jpg" alt="logo"></a>
+    </div>
+  <div class="navbar">
+
+  <div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+
+  <ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a class ="active"href="..\home.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="Login.html">Login</a></li>
+    <li><a href="signup.html">Signup</a></li>
+  </ul>
+
+  </div>
+  </div>
+  <div class="body">
+  </div>
+
+  <header id="header"><p>Download our mobile app. Google play Store
+  <img src="images/pic7.png" alt="logo"> Avaliable on App Store
+  <img src="images/pic6.png" alt="logo"></p></header>
+  <div class="container2">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">State</label>
+        </div>
+        <div class="col-75">
+          <select id="State" name="State">
+            <option value="NJ">NJ</option>
+            <option value="PA">PA</option>
+            <option value="MD">MD</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+
+</body>
+</html>

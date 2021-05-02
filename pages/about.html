@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.container2 {
+  height: 70px;
+  background: #CA3400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.container2 .logo {
+  max-width: 300px;
+  padding: 0 50px;
+  overflow: hidden;
+}
+
+.container2 .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70px;
+}
+
+.container2 .logo a img {
+  max-width: 100%;
+  max-height: 70px;
+}
+
+.container2 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 5px;
+}
+.container2 .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container2 .navbar a.active {
+  background-color: #c39b0f;
+  color: Black;
+}
+
+.container2 .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.container2 .navbar ul li a:hover {
+  color: blue;
+  background-color: #c39b0f;
+}
+
+.container2 .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.container2 .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.container2 .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container2 .navbar .icon-bar i {
+  background-color: #ffffff;
+  height: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container2 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #aa4f1d;
+  }
+
+  .container .logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .container2 .navbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+  }
+
+  .container2 .navbar ul {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left .3s;
+    -o-transition: left .3s;
+    transition: left .3s;
+  }
+
+  .container2 .navbar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    line-height: normal;
+    color: #555555;
+  }
+
+  .container2 .navbar ul .close {
+    display: block;
+  }
+
+  .container2 .navbar .icon-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .container2 .navbar ._Menus-show {
+    left: 0;
+  }
+  .body {
+    background-color:#BCCE98;
+    color: white;
+  }
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+
+  <script src="..\app.js"></script>
+
+  <div class="container2">
+    <div class="logo">
+        <a href="..\home.html"><img src="images/pic4.jpg" alt="logo"></a>
+    </div>
+  <div class="navbar">
+
+  <div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+
+  <ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a class ="active"href="..\home.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="Login.html">Login</a></li>
+    <li><a href="signup.html">Signup</a></li>
+  </ul>
+
+  </div>
+  </div>
+  <div class="body">
+  </div>
+
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>AT PIZZA BOLI'S, "WE DELIVER MORE" </p>
+    <p>IS MORE THAN JUST A SLOGAN..</p>
+  </div>
+
+  <h2 style="text-align:center">Our Mission</h2>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <p class="title">In the making!</p>
+        <p>"We Deliver More" means more delicious toppings, more variety,<br> and more taste.
+          And we’re always looking for new ways to bring more to you, <br>like new
+          products and promotions. <br>As always, our focus is on creating new ways
+          to add more to your dining experience. <br>We Deliver More Quality:.</p>
+        <p><button class="button">Learn More</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <p>Part of our commitment to Deliver More is a
+            commitment to delivering more quality ingredients.
+            By stamping our pizzas with our Fresh Never Frozen mark,
+             we ensure that our dough, secret recipe pizza sauce
+             and special blend of 100% cheeses are never frozen. .</p>
+          <p><button class="button">Learn More</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <p class="title">30 YEARS OF DELIVERING MORE</p>
+          <p>We are committed to a high level of quality and
+            we strive for this by providing the freshest
+            ingredients to our customers.<br></p>
+          <p><button class="button">Read</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>
